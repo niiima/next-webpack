@@ -5,17 +5,17 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const ScriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin');
 const PreloadWebpackPlugin = require('preload-webpack-plugin');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
+// const CopyWebpackPlugin = require('copy-webpack-plugin');
 module.exports = {
   mode: 'development',
   entry: './src/index.js',
-  output: {
-    path: __dirname + "/public",
-    filename: "static/bundle.js"
-},
-  resolve: {
-    extensions: ['.marko']
-},
+//   output: {
+//     path: __dirname + "/public",
+//     filename: "static/bundle.js"
+// },
+//   resolve: {
+//     extensions: ['.marko']
+// },
   module: {
     rules: [{
         test: /\.txt$/,
@@ -94,17 +94,17 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin(['dist']),
-    new CopyWebpackPlugin([
-      { 
-          from: './src/index.html'
-      }
-    ]),
-    // new HtmlWebpackPlugin({
-    //   title: 'next-webpack-marko',
-    //   filename: 'index.html',
-    //   template: './src/index.html',
-    //   inject: 'head'
-    // }),
+    // new CopyWebpackPlugin([
+    //   { 
+    //       from: './src/index.html'
+    //   }
+    // ]),
+    new HtmlWebpackPlugin({
+      title: 'next-webpack-marko',
+      filename: 'index.html',
+      template: './src/index.html',
+      inject: 'head'
+    }),
     new HtmlWebpackPlugin({
       title: 'next-404-page',
       filename: '404.html',

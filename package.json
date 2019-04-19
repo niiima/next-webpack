@@ -47,6 +47,7 @@
   "dependencies": {
     "bulma": "^0.7.4",
     "lazysizes": "^4.1.7",
-    "marko": "^4.16.10"
+    "marko": "^4.16.10",
+    "marko-loader": "^1.5.0"
   }
 }

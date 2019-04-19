@@ -1,5 +1,4 @@
-# next-webpack-marko
-
+# Next webpack with markojs
 
 # Usage
 
@@ -43,7 +42,7 @@ ___
 - [Gotcha's](#gotcha)
 - [Contributing](#contributing)
 
-<a name="wcs"/></a>
+<a name="wcs"></a>
 ___
 
 # Features Explained
@@ -87,7 +86,7 @@ We want our development and production builds to produce the same results visual
 
 I'll go into each process below.
 
-<a name="wds"/></a>
+<a name="wds"></a>
 ___
 
 ### Webpack Development Server
@@ -101,7 +100,7 @@ The webpack-dev-server is configured in the package.json. `npm start` will run t
 },
 ```
 
-<a name="html"/></a>
+<a name="html"></a>
 ___
 
 ### HTML assets and minification
@@ -170,7 +169,7 @@ ___
 
 If you use a different service, please do some research on how you can link your `404.html` page so that it's active. It's a great way to send people back to your main page if they land on a broken link.
 
-<a name="sass"/></a>
+<a name="sass"></a>
 ___
 
 ### SCSS to CSS + optimizations
@@ -302,7 +301,7 @@ module.exports = merge(common, {
 
 Read more about the options in the [terser documentation](https://github.com/terser-js/terser).
 
-<a name="browser"/></a>
+<a name="browser"></a>
 ___
 
 ### Browserslist
@@ -318,7 +317,7 @@ Read up on what else you can pass into `.browserslistrc` and use [browserl.ist](
 not dead
 ```
 
-<a name="img"/></a>
+<a name="img"></a>
 ___
 
 ### Image assets + compression
@@ -430,7 +429,7 @@ module.exports = merge(common, {
 });
 ```
 
-<a name="cwp"/></a>
+<a name="cwp"></a>
 ___
 
 ### Clean Webpack Plugin
@@ -532,7 +531,7 @@ module.exports = merge(common, {
 });
 ```
 
-<a name="progressive"/></a>
+<a name="progressive"></a>
 ___
 
 ### Progressive Web App (PWA)
@@ -541,7 +540,7 @@ ___
 
 The final step to make this boilerplate a PWA is to add the mandatory [Web App Manifest](https://developers.google.com/web/fundamentals/web-app-manifest/) to the root of your project and configure it appropriately!
 
-<a name="gotcha"/></a>
+<a name="gotcha"></a>
 ___
 
 # Gotcha's

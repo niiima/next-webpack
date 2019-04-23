@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>next webpack marko 📦</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="Description" content="A simple yet thorough webpack starter boilerplate for static websites that acheive high performance and cover all best practices.">
+  <meta name="Description"
+    content="A simple yet thorough webpack starter boilerplate for static websites that acheive high performance and cover all best practices.">
 
   <!-- Open Graph data / Facebook Card data -->
   <meta property="og:title" content="next webpack marko">
@@ -12,11 +14,12 @@
   <meta property="og:url" content="https://github.com/niiima/next-webpack-marko">
   <meta property="og:image" content="https://i.imgur.com/lxRBpeb.jpg">
   <meta property="og:image:alt" content="A blue package, symbolizing what webpack does.">
-  <meta property="og:description" content="A simple yet thorough webpack starter boilerplate for static websites that acheive high performance and cover all best practices.">
+  <meta property="og:description"
+    content="A simple yet thorough webpack starter boilerplate for static websites that acheive high performance and cover all best practices.">
 
   <!-- Twitter Card data -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:creator" content="@triscodes">
+  <meta name="twitter:creator" content="@bastanima">
 
   <!-- Mobile header color for Chrome, Firefox OS and Opera -->
   <meta name="theme-color" content="#2c638f">
@@ -24,6 +27,7 @@
   <meta name="msapplication-navbutton-color" content="#2c638f">
   <!-- Mobile header color for iOS Safari (supports black, black-translucent or default) -->
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="stylesheet" src="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
 </head>
 
 <body>
@@ -32,14 +36,444 @@
     <div class="wrapper">
 
       <div class="nav">
-        <a class="logo-link" href="https://github.com/niiima/next-webpack-marko" aria-label="Tristan's webpack boilerplate github repository.">
+        <a class="logo-link" href="https://github.com/niiima/next-webpack-marko"
+          aria-label="Tristan's webpack boilerplate github repository.">
           <img class="logo-img" src="images/next-package.svg" alt="website logo">
         </a>
-        <h1>tris <span>webpack</span> <a class="link" href="https://github.com/niiima/next-webpack-marko" aria-label="Tristan's webpack boilerplate github repository.">boilerplate</a></h1>
+       
+        <h1>Next <span>webpack</span> <a class="link" href="https://github.com/niiima/next-webpack-marko"
+            aria-label="Tristan's webpack boilerplate github repository.">boilerplate <span uk-icon = "cog"></span></a></h1>
       </div>
 
     </div>
   </header>
-
+  <!-- UIkit SECTION -->
+  <div class="uk-section uk-section-default">
+    <div class="uk-container uk-container-large">
+      <div class="uk-margin uk-grid-match uk-grid-medium uk-child-width-1-2@xl" uk-grid>
+        <!-- UIkit CARD -->
+        <div>
+          <div
+            class="uk-margin uk-card uk-card-default uk-card-hover uk-grid-collapse uk-child-width-1-2@s uk-visible-toggle uk-animation-toggle"
+            tabindex="-1" uk-grid>
+            <!-- UIkit CARD IMG -->
+            <div class="uk-inline thumbnail uk-cover-container">
+              <canvas width="330" height="320"></canvas>
+              <img src="https://image.noelshack.com/fichiers/2019/10/4/1551921758-uikit-preview.png" alt="" uk-cover>
+              <div
+                class="uk-hidden-hover uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle uk-position-bottom uk-animation-slide-bottom"
+                uk-lightbox>
+                <a class="uk-button uk-button-default"
+                  href="https://image.noelshack.com/fichiers/2019/10/4/1551921758-uikit-preview.png">
+                  <span class="uk-margin-small-right" uk-icon="icon: image; ratio: 1.2"></span>
+                  <span class="uk-text-emphasis">Preview</span>
+                </a>
+              </div>
+            </div>
+            <!-- UIkit CARD HEADER -->
+            <div class="uk-card-header">
+              <div class="uk-grid-small uk-flex-middle" uk-grid>
+                <div class="uk-width-auto">
+                  <img class="uk-border-circle" width="40" height="40" src="https://getuikit.com/images/favicon.png">
+                </div>
+                <div class="uk-width-expand">
+                  <div class="uk-card-badge uk-label tooltip-top" data-tooltip="POPULAR">
+                    <span class="uk-icon uk-text-warning" uk-icon="icon: heart; ratio: 1.2"></span>
+                  </div>
+                  <h3 class="uk-card-title uk-margin-remove-bottom">UIkit</h3>
+                  <p class="uk-text-meta uk-margin-remove-top">https://getuikit.com</p>
+                </div>
+                <!-- UIkit CARD BODY -->
+                <div class="uk-card-body">
+                  <hr>
+                  <p class="uk-margin-remove-top">A lightweight and modular front-end framework for developing fast and
+                    powerful web interfaces.</p>
+                  <hr class="uk-hr-custom">
+                  <div class="uk-flex uk-flex-center uk-flex-middle"
+                    uk-switcher="animation: uk-animation-fade; toggle: > *">
+                    <button class="uk-button uk-button-default uk-button-small uk-margin-small-right" type="button">
+                      <span uk-icon="icon: folder"></span>
+                      <span class="uk-text-emphasis">Category</span>
+                    </button>
+                    <button class="uk-button uk-button-default uk-button-small uk-margin-small-right" type="button">
+                      <span uk-icon="icon: tag"></span>
+                      <span class="uk-text-emphasis">Tag</span>
+                    </button>
+                    <button class="uk-button uk-button-default uk-button-small" type="button">
+                      <span uk-icon="icon: social"></span>
+                      <span class="uk-text-emphasis">Social</span>
+                    </button>
+                  </div>
+                  <ul class="uk-switcher uk-margin uk-flex uk-flex-center uk-flex-middle uk-text-center">
+                    <li>
+                      <a class="uk-button uk-button-primary uk-button-small" href="#">
+                        <span uk-icon="icon: cog; ratio: 0.8"></span>
+                        <span class="uk-text-secondary">Framework</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="uk-button uk-button-text uk-margin-small-right" href="#"><span
+                          uk-icon="icon: hashtag; ratio: 0.8"></span><span
+                          class="uk-text-secondary">Developer</span></a>
+                      <a class="uk-button uk-button-text uk-margin-small-right" href="#"><span
+                          uk-icon="icon: hashtag; ratio: 0.8"></span><span
+                          class="uk-text-secondary">Framework</span></a>
+                      <a class="uk-button uk-button-text uk-margin-small-right" href="#"><span
+                          uk-icon="icon: hashtag; ratio: 0.8"></span><span class="uk-text-secondary">Joomla</span></a>
+                      <a class="uk-button uk-button-text" href="#"><span
+                          uk-icon="icon: hashtag; ratio: 0.8"></span><span
+                          class="uk-text-secondary">Wordpress</span></a>
+                    </li>
+                    <li>
+                      <a href="#" class="uk-margin-small-right" uk-icon="icon: facebook; ratio: 2"></a>
+                      <a href="#" class="uk-margin-small-right" uk-icon="icon: twitter; ratio: 2"></a>
+                      <a href="#" uk-icon="icon: mail; ratio: 2"></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- UIkit CARD FOOTER -->
+            <div class="uk-card-footer uk-width-expand">
+              <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+                <div class="uk-navbar-center uk-navbar-item">
+                  <ul class="uk-navbar-nav">
+                    <li><a class="tooltip-top" href="#" data-tooltip="46"><span class="uk-icon uk-margin-small-right"><i
+                            class="far fa-eye fa-2x"></i></span>Hits</a></li>
+                    <li><a class="tooltip-top" href="#" data-tooltip="81"><span class="uk-icon uk-margin-small-right"><i
+                            class="far fa-heart fa-2x"></i></span>Likes</a></li>
+                    <li><a class="tooltip-top" href="#" data-tooltip="23"><span class="uk-icon uk-margin-small-right"><i
+                            class="far fa-comment-dots fa-2x"></i></span>Comments</a></li>
+                    <li class="uk-padding-remove"><a class="tooltip-top" href="#" data-tooltip="Social"><span
+                          class="uk-icon uk-margin-small-right"><i class="fas fa-share-alt fa-2x"></i></span>Share</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+              <!-- UIkit CARD FAB -->
+              <a class="uk-hidden-hover fab uk-animation-slide-right" href="#"><i class="fas fa-link fa-3x"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- UIkit CARD -->
+        <div>
+          <div
+            class="uk-margin uk-card uk-card-default uk-card-hover uk-grid-collapse uk-child-width-1-2@s uk-visible-toggle uk-animation-toggle"
+            tabindex="-1" uk-grid>
+            <!-- UIkit CARD IMG -->
+            <div class="uk-inline thumbnail uk-cover-container">
+              <canvas width="330" height="320"></canvas>
+              <img src="https://image.noelshack.com/fichiers/2019/10/4/1551921832-yootheme-preview.png" alt="" uk-cover>
+              <div
+                class="uk-hidden-hover uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle uk-position-bottom uk-animation-slide-bottom"
+                uk-lightbox>
+                <a class="uk-button uk-button-default"
+                  href="https://image.noelshack.com/fichiers/2019/10/4/1551921832-yootheme-preview.png">
+                  <span class="uk-margin-small-right" uk-icon="icon: image; ratio: 1.2"></span>
+                  <span class="uk-text-emphasis">Preview</span>
+                </a>
+              </div>
+            </div>
+            <!-- UIkit CARD HEADER -->
+            <div class="uk-card-header">
+              <div class="uk-grid-small uk-flex-middle" uk-grid>
+                <div class="uk-width-auto">
+                  <img class="uk-border-circle" width="40" height="40"
+                    src="https://yootheme.com/site/images/favicon.png">
+                </div>
+                <div class="uk-width-expand">
+                  <div class="uk-card-badge uk-label tooltip-top" data-tooltip="FEATURED">
+                    <span class="uk-icon uk-text-warning" uk-icon="icon: star; ratio: 1.2"></span>
+                  </div>
+                  <h3 class="uk-card-title uk-margin-remove-bottom">YOOtheme</h3>
+                  <p class="uk-text-meta uk-margin-remove-top">https://yootheme.com</p>
+                </div>
+                <div class="uk-card-body">
+                  <hr>
+                  <p class="uk-margin-remove-top">At YOOtheme we're passionate about developing everything you need to
+                    create beautiful websites with WordPress and Joomla.</p>
+                  <hr class="uk-hr-custom">
+                  <div class="uk-flex uk-flex-center uk-flex-middle"
+                    uk-switcher="animation: uk-animation-fade; toggle: > *">
+                    <button class="uk-button uk-button-default uk-button-small uk-margin-small-right" type="button">
+                      <span uk-icon="icon: folder"></span>
+                      <span class="uk-text-emphasis">Category</span>
+                    </button>
+                    <button class="uk-button uk-button-default uk-button-small uk-margin-small-right" type="button">
+                      <span uk-icon="icon: tag"></span>
+                      <span class="uk-text-emphasis">Tag</span>
+                    </button>
+                    <button class="uk-button uk-button-default uk-button-small" type="button">
+                      <span uk-icon="icon: social"></span>
+                      <span class="uk-text-emphasis">Social</span>
+                    </button>
+                  </div>
+                  <ul class="uk-switcher uk-margin uk-flex uk-flex-center uk-flex-middle uk-text-center">
+                    <li>
+                      <a class="uk-button uk-button-primary uk-button-small" href="#">
+                        <span uk-icon="icon: cog; ratio: 0.8"></span>
+                        <span class="uk-text-secondary">WebDesigner</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="uk-button uk-button-text uk-margin-small-right" href="#"><span
+                          uk-icon="icon: hashtag; ratio: 0.8"></span><span
+                          class="uk-text-secondary">Webdesigner</span></a>
+                      <a class="uk-button uk-button-text uk-margin-small-right" href="#"><span
+                          uk-icon="icon: hashtag; ratio: 0.8"></span><span
+                          class="uk-text-secondary">Developer</span></a>
+                      <a class="uk-button uk-button-text uk-margin-small-right" href="#"><span
+                          uk-icon="icon: hashtag; ratio: 0.8"></span><span class="uk-text-secondary">Joomla</span></a>
+                      <a class="uk-button uk-button-text" href="#"><span
+                          uk-icon="icon: hashtag; ratio: 0.8"></span><span
+                          class="uk-text-secondary">Wordpress</span></a>
+                    </li>
+                    <li>
+                      <a href="#" class="uk-margin-small-right" uk-icon="icon: facebook; ratio: 2"></a>
+                      <a href="#" class="uk-margin-small-right" uk-icon="icon: twitter; ratio: 2"></a>
+                      <a href="#" uk-icon="icon: mail; ratio: 2"></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- UIkit CARD FOOTER -->
+            <div class="uk-card-footer uk-width-expand">
+              <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+                <div class="uk-navbar-center uk-navbar-item">
+                  <ul class="uk-navbar-nav">
+                    <li><a class="tooltip-top" href="#" data-tooltip="46"><span class="uk-icon uk-margin-small-right"><i
+                            class="far fa-eye fa-2x"></i></span>Hits</a></li>
+                    <li><a class="tooltip-top" href="#" data-tooltip="81"><span class="uk-icon uk-margin-small-right"><i
+                            class="far fa-heart fa-2x"></i></span>Likes</a></li>
+                    <li><a class="tooltip-top" href="#" data-tooltip="23"><span class="uk-icon uk-margin-small-right"><i
+                            class="far fa-comment-dots fa-2x"></i></span>Comments</a></li>
+                    <li class="uk-padding-remove"><a class="tooltip-top" href="#" data-tooltip="Social"><span
+                          class="uk-icon uk-margin-small-right"><i class="fas fa-share-alt fa-2x"></i></span>Share</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+              <!-- UIkit CARD FAB -->
+              <a class="uk-hidden-hover fab uk-animation-slide-right" href="#"><i class="fas fa-link fa-3x"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- UIkit CARD -->
+        <div>
+          <div
+            class="uk-margin uk-card uk-card-default uk-card-hover uk-grid-collapse uk-child-width-1-2@s uk-visible-toggle uk-animation-toggle"
+            tabindex="-1" uk-grid>
+            <!-- UIkit CARD IMG -->
+            <div class="uk-inline thumbnail uk-cover-container">
+              <canvas width="330" height="320"></canvas>
+              <img src="https://image.noelshack.com/fichiers/2019/10/4/1551921838-widgetkit-preview.png" alt=""
+                uk-cover>
+              <div
+                class="uk-hidden-hover uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle uk-position-bottom uk-animation-slide-bottom"
+                uk-lightbox>
+                <a class="uk-button uk-button-default"
+                  href="https://image.noelshack.com/fichiers/2019/10/4/1551921838-widgetkit-preview.png">
+                  <span class="uk-margin-small-right" uk-icon="icon: image; ratio: 1.2"></span>
+                  <span class="uk-text-emphasis">Preview</span>
+                </a>
+              </div>
+            </div>
+            <!-- UIkit CARD HEADER -->
+            <div class="uk-card-header">
+              <div class="uk-grid-small uk-flex-middle" uk-grid>
+                <div class="uk-width-auto">
+                  <img class="uk-border-circle" width="40" height="40"
+                    src="https://yootheme.com/site/images/favicon.png">
+                </div>
+                <div class="uk-width-expand">
+                  <div class="uk-card-badge uk-label tooltip-top" data-tooltip="UPDATED">
+                    <span class="uk-icon uk-text-warning" uk-icon="icon: refresh; ratio: 1.2"></span>
+                  </div>
+                  <h3 class="uk-card-title uk-margin-remove-bottom">Widgetkit</h3>
+                  <p class="uk-text-meta uk-margin-remove-top">https://yootheme.com/widgetkit</p>
+                </div>
+                <!-- UIkit CARD BODY -->
+                <div class="uk-card-body">
+                  <hr>
+                  <p class="uk-margin-remove-top">An easy-to-use collection of widgets for WordPress and Joomla to
+                    enrich your website with slideshows, galleries and more.</p>
+                  <hr class="uk-hr-custom">
+                  <div class="uk-flex uk-flex-center uk-flex-middle"
+                    uk-switcher="animation: uk-animation-fade; toggle: > *">
+                    <button class="uk-button uk-button-default uk-button-small uk-margin-small-right" type="button">
+                      <span uk-icon="icon: folder"></span>
+                      <span class="uk-text-emphasis">Category</span>
+                    </button>
+                    <button class="uk-button uk-button-default uk-button-small uk-margin-small-right" type="button">
+                      <span uk-icon="icon: tag"></span>
+                      <span class="uk-text-emphasis">Tag</span>
+                    </button>
+                    <button class="uk-button uk-button-default uk-button-small" type="button">
+                      <span uk-icon="icon: social"></span>
+                      <span class="uk-text-emphasis">Social</span>
+                    </button>
+                  </div>
+                  <ul class="uk-switcher uk-margin uk-flex uk-flex-center uk-flex-middle uk-text-center">
+                    <li>
+                      <a class="uk-button uk-button-primary uk-button-small" href="#">
+                        <span uk-icon="icon: cog; ratio: 0.8"></span>
+                        <span class="uk-text-secondary">Framework</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="uk-button uk-button-text uk-margin-small-right" href="#"><span
+                          uk-icon="icon: hashtag; ratio: 0.8"></span><span
+                          class="uk-text-secondary">Developer</span></a>
+                      <a class="uk-button uk-button-text uk-margin-small-right" href="#"><span
+                          uk-icon="icon: hashtag; ratio: 0.8"></span><span
+                          class="uk-text-secondary">Framework</span></a>
+                      <a class="uk-button uk-button-text uk-margin-small-right" href="#"><span
+                          uk-icon="icon: hashtag; ratio: 0.8"></span><span class="uk-text-secondary">Joomla</span></a>
+                      <a class="uk-button uk-button-text" href="#"><span
+                          uk-icon="icon: hashtag; ratio: 0.8"></span><span
+                          class="uk-text-secondary">Wordpress</span></a>
+                    </li>
+                    <li>
+                      <a href="#" class="uk-margin-small-right" uk-icon="icon: facebook; ratio: 2"></a>
+                      <a href="#" class="uk-margin-small-right" uk-icon="icon: twitter; ratio: 2"></a>
+                      <a href="#" uk-icon="icon: mail; ratio: 2"></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- UIkit CARD FOOTER -->
+            <div class="uk-card-footer uk-width-expand">
+              <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+                <div class="uk-navbar-center uk-navbar-item">
+                  <ul class="uk-navbar-nav">
+                    <li><a class="tooltip-top" href="#" data-tooltip="46"><span class="uk-icon uk-margin-small-right"><i
+                            class="far fa-eye fa-2x"></i></span>Hits</a></li>
+                    <li><a class="tooltip-top" href="#" data-tooltip="81"><span class="uk-icon uk-margin-small-right"><i
+                            class="far fa-heart fa-2x"></i></span>Likes</a></li>
+                    <li><a class="tooltip-top" href="#" data-tooltip="23"><span class="uk-icon uk-margin-small-right"><i
+                            class="far fa-comment-dots fa-2x"></i></span>Comments</a></li>
+                    <li class="uk-padding-remove"><a class="tooltip-top" href="#" data-tooltip="Social"><span
+                          class="uk-icon uk-margin-small-right"><i class="fas fa-share-alt fa-2x"></i></span>Share</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+              <!-- UIkit CARD FAB -->
+              <a class="uk-hidden-hover fab uk-animation-slide-right" href="#"><i class="fas fa-link fa-3x"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- UIkit CARD -->
+        <div>
+          <div
+            class="uk-margin uk-card uk-card-default uk-card-hover uk-grid-collapse uk-child-width-1-2@s uk-visible-toggle uk-animation-toggle"
+            tabindex="-1" uk-grid>
+            <!-- UIkit CARD IMG -->
+            <div class="uk-inline thumbnail uk-cover-container">
+              <canvas width="330" height="320"></canvas>
+              <img src="https://image.noelshack.com/fichiers/2019/10/4/1551921848-zoo-preview.png" alt="" uk-cover>
+              <div
+                class="uk-hidden-hover uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle uk-position-bottom uk-animation-slide-bottom"
+                uk-lightbox>
+                <a class="uk-button uk-button-default"
+                  href="https://image.noelshack.com/fichiers/2019/10/4/1551921848-zoo-preview.png">
+                  <span class="uk-margin-small-right" uk-icon="icon: image; ratio: 1.2"></span>
+                  <span class="uk-text-emphasis">Preview</span>
+                </a>
+              </div>
+            </div>
+            <!-- UIkit CARD HEADER -->
+            <div class="uk-card-header">
+              <div class="uk-grid-small uk-flex-middle" uk-grid>
+                <div class="uk-width-auto">
+                  <img class="uk-border-circle" width="40" height="40"
+                    src="https://yootheme.com/site/images/favicon.png">
+                </div>
+                <div class="uk-width-expand">
+                  <div class="uk-card-badge uk-label tooltip-top" data-tooltip="VERIFIED">
+                    <span class="uk-icon uk-text-warning" uk-icon="icon: check; ratio: 1.2"></span>
+                  </div>
+                  <h3 class="uk-card-title uk-margin-remove-bottom">ZOO</h3>
+                  <p class="uk-text-meta uk-margin-remove-top">https://yootheme.com/zoo</p>
+                </div>
+                <!-- UIkit CARD BODY -->
+                <div class="uk-card-body">
+                  <hr>
+                  <p class="uk-margin-remove-top">A flexible and powerful catalog system for Joomla, which allows you to
+                    create your very own content types with custom fields.</p>
+                  <hr class="uk-hr-custom">
+                  <div class="uk-flex uk-flex-center uk-flex-middle"
+                    uk-switcher="animation: uk-animation-fade; toggle: > *">
+                    <button class="uk-button uk-button-default uk-button-small uk-margin-small-right" type="button">
+                      <span uk-icon="icon: folder"></span>
+                      <span class="uk-text-emphasis">Category</span>
+                    </button>
+                    <button class="uk-button uk-button-default uk-button-small uk-margin-small-right" type="button">
+                      <span uk-icon="icon: tag"></span>
+                      <span class="uk-text-emphasis">Tag</span>
+                    </button>
+                    <button class="uk-button uk-button-default uk-button-small" type="button">
+                      <span uk-icon="icon: social"></span>
+                      <span class="uk-text-emphasis">Social</span>
+                    </button>
+                  </div>
+                  <ul class="uk-switcher uk-margin uk-flex uk-flex-center uk-flex-middle uk-text-center">
+                    <li>
+                      <a class="uk-button uk-button-primary uk-button-small" href="#">
+                        <span uk-icon="icon: cog; ratio: 0.8"></span>
+                        <span class="uk-text-secondary">Framework</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="uk-button uk-button-text uk-margin-small-right" href="#"><span
+                          uk-icon="icon: hashtag; ratio: 0.8"></span><span
+                          class="uk-text-secondary">Developer</span></a>
+                      <a class="uk-button uk-button-text uk-margin-small-right" href="#"><span
+                          uk-icon="icon: hashtag; ratio: 0.8"></span><span
+                          class="uk-text-secondary">Framework</span></a>
+                      <a class="uk-button uk-button-text uk-margin-small-right" href="#"><span
+                          uk-icon="icon: hashtag; ratio: 0.8"></span><span class="uk-text-secondary">Joomla</span></a>
+                      <a class="uk-button uk-button-text" href="#"><span
+                          uk-icon="icon: hashtag; ratio: 0.8"></span><span
+                          class="uk-text-secondary">Wordpress</span></a>
+                    </li>
+                    <li>
+                      <a href="#" class="uk-margin-small-right" uk-icon="icon: facebook; ratio: 2"></a>
+                      <a href="#" class="uk-margin-small-right" uk-icon="icon: twitter; ratio: 2"></a>
+                      <a href="#" uk-icon="icon: mail; ratio: 2"></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- UIkit CARD FOOTER -->
+            <div class="uk-card-footer uk-width-expand">
+              <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+                <div class="uk-navbar-center uk-navbar-item">
+                  <ul class="uk-navbar-nav">
+                    <li><a class="tooltip-top" href="#" data-tooltip="46"><span class="uk-icon uk-margin-small-right"><i
+                            class="far fa-eye fa-2x"></i></span>Hits</a></li>
+                    <li><a class="tooltip-top" href="#" data-tooltip="81"><span class="uk-icon uk-margin-small-right"><i
+                            class="far fa-heart fa-2x"></i></span>Likes</a></li>
+                    <li><a class="tooltip-top" href="#" data-tooltip="23"><span class="uk-icon uk-margin-small-right"><i
+                            class="far fa-comment-dots fa-2x"></i></span>Comments</a></li>
+                    <li class="uk-padding-remove"><a class="tooltip-top" href="#" data-tooltip="Social"><span
+                          class="uk-icon uk-margin-small-right"><i class="fas fa-share-alt fa-2x"></i></span>Share</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+              <!-- UIkit CARD FAB -->
+              <a class="uk-hidden-hover fab uk-animation-slide-right" href="#"><i class="fas fa-link fa-3x"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- UIkit CARD -->
+      </div>
+    </div>
+  </div>
 </body>
+
 </html>

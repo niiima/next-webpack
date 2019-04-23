@@ -7,12 +7,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-- A directory for documentation including a "CHANGELOG".
-- Installed markojs globally `npm install marko-cli --global`
+### Changed
+
+### Removed
+
+## [1.0.0] - 2019-04-19
 
 ### Changed
 
 ### Removed
+
+## [1.1.0] - 2019-04-23
+
+- A directory for documentation including a "CHANGELOG".
+- Using UIkit framework to build ui.
 
 ## [1.0.0] - 2019-04-19
 

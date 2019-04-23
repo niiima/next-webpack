@@ -10,7 +10,11 @@
 @import "./styles/base/typography";
 @import "./styles/base/global";
 
+@import '../node_modules/uikit/src/scss/variables.scss';
+@import '../node_modules/uikit/src/scss/mixins.scss';
+@import '../node_modules/uikit/src/scss/uikit.scss';
+
 //! layout
 @import "./styles/layout/header";
-// @import "./styles/layout/main";
+ @import "./styles/layout/main";
 // @import "./styles/layout/footer";

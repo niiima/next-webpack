@@ -307,7 +307,7 @@ ___
 
 ### Browserslist
 
-Here we want to have one place where we can tell certain tools what browsers we'd like to add support for. We acheive this using [browserslist](https://github.com/browserslist/browserslist), and the corresponding `.browserslistrc` file in the project root. [Autoprefixer](https://github.com/postcss/autoprefixer) and [babel-present-env](https://babeljs.io/docs/en/babel-preset-env) will pick up on this file and apply what it needs to based on the config.
+Here we want to have one place where we can tell certain tools what browsers we'd like to add support for. We achieve this using [browserslist](https://github.com/browserslist/browserslist), and the corresponding `.browserslistrc` file in the project root. [Autoprefixer](https://github.com/postcss/autoprefixer) and [babel-present-env](https://babeljs.io/docs/en/babel-preset-env) will pick up on this file and apply what it needs to based on the config.
 
 Read up on what else you can pass into `.browserslistrc` and use [browserl.ist](https://browserl.ist/) to see what browsers will specifically be targeted with your config. Okay I think I've said browsers enough times now 😌.
 
@@ -396,7 +396,7 @@ Here we are testing for all the common font extensions and using the [file-loade
 
 In our `src/styles/base/_typography.scss` we are loading the fonts via the `@font-face` rule. [Google Webfonts Helper](https://google-webfonts-helper.herokuapp.com/fonts) is also a fantastic tool for self-hosting Google Fonts hassle-free. Read more about the `@font-face` rule on [CSS-tricks](https://css-tricks.com/snippets/css/using-font-face/). Additionally, read up on the [font-display](https://css-tricks.com/font-display-masses/) property as well.
 
-It's always best practice to preload your fonts. We'll acheive that using the [preload-webpack-plugin](https://github.com/GoogleChromeLabs/preload-webpack-plugin), and you'll need to put it right after the `HtmlWebpackPlugin` for it to work properly.
+It's always best practice to preload your fonts. We'll achieve that using the [preload-webpack-plugin](https://github.com/GoogleChromeLabs/preload-webpack-plugin), and you'll need to put it right after the `HtmlWebpackPlugin` for it to work properly.
 
 ```js
 /* webpack.common.js */

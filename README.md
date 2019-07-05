@@ -1,4 +1,4 @@
-# next-webpack-marko
+# next-webpack
 
 
 # Usage
